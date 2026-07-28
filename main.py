@@ -65,7 +65,7 @@ def deletefile():
     try:
         name=input("Enter the nameof your file:- ")
         path=Path(name)
-        if path.exist():
+        if path.exists():
             path.unlink()
             print("File deleted successfully")    
         else:
